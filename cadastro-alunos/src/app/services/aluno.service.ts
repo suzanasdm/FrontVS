@@ -6,5 +6,15 @@ import { ALuno } from "../models/aluno.model"
 
 })
 export class AlunoService {
-    
+
+    private alunos: ALuno [] = [];
+    adicionarAluno(aluno: ALuno): void{
+        this.alunos.push(aluno);
+
+    }
+    getAlunos(): ALuno[]{
+        return this.alunos
+
+    }
+
 }

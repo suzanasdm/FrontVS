@@ -1,1 +1,16 @@
-<p>aluno works!</p>
+<h2>Cadastro de Alunos</h2>
+<form (ngSubmit)="adicionarAluno()"
+#form="ngForm" style="margin-botton: 20px">
+<div>
+<label >RA:</label>
+<input type="text" [(ngModel)]="novoAluno.ra" name="ra" required>
+</div>  
+<input type="text" [(ngModel)]="novoAluno.curso" name="curso" required>
+</div> 
+
+<input type="text" [(ngModel)]="novoAluno.dtNascimento" name="dtaNascimento" required>
+
+</div> 
+<input type="text" [(ngModel)]="novoAluno.nome" name="nome" required>
+</div> 
+</form>
