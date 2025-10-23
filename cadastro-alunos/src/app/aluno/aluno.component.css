@@ -1,0 +1,143 @@
+/* Paleta de Cores:
+   - Primária (Ação/Destaque): #10b981 (Verde Esmeralda)
+   - Secundária (Fundo/Detalhes): #8b5cf6 (Roxo Ametista)
+   - Fundo Principal: #f8fafc (Branco Suave)
+   - Texto Principal: #1f2937 (Cinza Escuro)
+*/
+
+/* Estilos Globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc; /* Fundo muito leve */
+    color: #1f2937; /* Texto escuro para alto contraste */
+    padding: 25px;
+    margin: 0;
+}
+
+/* Títulos */
+h2 {
+    color: #8b5cf6; /* Roxo Ametista */
+    border-bottom: 3px solid #8b5cf6;
+    padding-bottom: 8px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Formulário de Cadastro */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 2px 5px rgba(0, 0, 0, 0.08); /* Sombra suave e moderna */
+    margin-bottom: 40px;
+    max-width: 550px;
+    border-left: 5px solid #10b981; /* Destaque lateral */
+}
+
+/* Campos do Formulário (divs) */
+form > div {
+    margin-bottom: 20px;
+}
+
+/* Rótulos */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #374151;
+    font-size: 14px;
+}
+
+/* Inputs de Texto */
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+    border-color: #10b981; /* Esmeralda no foco */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2); /* Sombra colorida suave */
+}
+
+/* Botão de Cadastrar */
+button[type="submit"] {
+    background-color: #10b981; /* Verde Esmeralda vibrante */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button[type="submit"]:hover:not([disabled]) {
+    background-color: #059669; /* Tom mais escuro ao passar o mouse */
+    transform: translateY(-1px); /* Pequeno efeito de elevação */
+}
+
+/* Estilo do botão quando desabilitado */
+button[type="submit"][disabled] {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Tabela de Alunos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden; /* Importante para o border-radius funcionar com as bordas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Cabeçalho da Tabela */
+thead {
+    background-color: #8b5cf6; /* Roxo Ametista */
+    color: white;
+    font-size: 14px;
+}
+
+th {
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Corpo da Tabela */
+td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #e5e7eb; /* Linhas divisórias muito suaves */
+    font-size: 15px;
+}
+
+/* Efeito Zebra (Linhas Alternadas) */
+tbody tr:nth-child(even) {
+    background-color: #f3f4f6; /* Cinza suave para linhas pares */
+}
+
+/* Destaque ao passar o mouse */
+tbody tr:hover {
+    background-color: #e0e7ff; /* Destaque suave em tom de azul/roxo */
+    cursor: default;
+    transition: background-color 0.2s;
+}
+
+/* Estilo para a última linha para remover a borda inferior duplicada (opcional) */
+tbody tr:last-child td {
+    border-bottom: none;
+}
